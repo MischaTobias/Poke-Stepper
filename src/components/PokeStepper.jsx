@@ -11,7 +11,7 @@ export const PokeStepper = () => {
 
   return (
     <>
-      <h1>Información de Pokémon</h1>
+      <h1>Pokemon Information</h1>
       <hr />
 
       {isLoading ? (
@@ -33,14 +33,11 @@ export const PokeStepper = () => {
         onClick={() => (counter > 1 ? decrement() : null)}
         className="btn btn-primary"
       >
-        Anterior
+        Previous
       </button>
       <button onClick={() => increment()} className="btn btn-primary">
-        Siguiente
+        Next
       </button>
-      {/* <button onClick={reset} className="btn btn-primary">
-        Reset
-      </button> */}
     </>
   );
 };

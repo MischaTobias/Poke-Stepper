@@ -1,8 +1,18 @@
-# React + Vite
+# Poke Stepper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This apps purpose is to show information about a certain pokemon and to be able to step through them, using PokeAPI.
 
-Currently, two official plugins are available:
+# Content
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Watch live](#watch-live)
+- [Built with](#built-with)
+
+# Watch live
+
+The site is hosted on both Netlify and Github Pages:
+
+- Github Pages: https://mischatobias.github.io/Poke-Stepper/
+
+# Built with
+
+This app was developed using react 18, using custom hooks, and using a 3rd party API from PokeAPI.

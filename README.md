@@ -11,6 +11,7 @@ This apps purpose is to show information about a certain pokemon and to be able 
 
 The site is hosted on both Netlify and Github Pages:
 
+- Netlify: https://poke-stepper.netlify.app
 - Github Pages: https://mischatobias.github.io/Poke-Stepper/
 
 # Built with

@@ -14,30 +14,56 @@ export const PokeStepper = () => {
       <h1>Pokemon Information</h1>
       <hr />
 
-      {isLoading ? (
-        <LoadingMessage />
-      ) : (
-        <PokemonCard
-          id={counter}
-          name={data.name}
-          sprites={[
-            data.sprites.front_default,
-            data.sprites.back_default,
-            data.sprites.front_shiny,
-            data.sprites.back_shiny,
-          ]}
-        />
-      )}
-
-      <button
-        onClick={() => (counter > 1 ? decrement() : null)}
-        className="btn btn-primary"
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "2OOpx",
+          width: "100%",
+        }}
       >
-        Previous
-      </button>
-      <button onClick={() => increment()} className="btn btn-primary">
-        Next
-      </button>
+        {isLoading ? (
+          <LoadingMessage />
+        ) : (
+          <PokemonCard
+            id={counter}
+            name={data.name}
+            sprites={[
+              data.sprites.front_default,
+              data.sprites.back_default,
+              data.sprites.front_shiny,
+              data.sprites.back_shiny,
+            ]}
+          />
+        )}
+
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            marginTop: "20px",
+            width: "100%",
+            maxWidth: "400px",
+          }}
+        >
+          <button
+            onClick={() => (counter > 1 ? decrement() : null)}
+            className="btn btn-primary"
+            style={{ flexGrow: 1, flexBasis: "0", minWidth: "0" }}
+          >
+            Previous
+          </button>
+          <button
+            onClick={() => increment()}
+            className="btn btn-primary"
+            style={{ flexGrow: 1, flexBasis: "0", minWidth: "0" }}
+          >
+            Next
+          </button>
+        </div>
+      </div>
     </>
   );
 };

@@ -35,6 +35,7 @@ export const useFetch = (url) => {
     }
 
     setLoadingState();
+
     const resp = await fetch(url);
 
     if (!resp.ok) {

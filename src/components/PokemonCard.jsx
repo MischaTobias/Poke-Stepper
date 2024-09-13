@@ -1,6 +1,6 @@
 export const PokemonCard = ({ id, name, sprites = [] }) => {
   return (
-    <section style={{ height: 200 }}>
+    <section style={{ height: "200px" }}>
       <h2 className="text-capitalize">
         #{id} - {name}
       </h2>
